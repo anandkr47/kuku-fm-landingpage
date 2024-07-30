@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./MenuBar.module.css";
 
-const OffCanvas = ({ show, onClose }) => {
+const MenuBar = ({ show, onClose }) => {
   return (
     <div className={`${styles.offCanvasWrapper} ${show ? styles.show : ""}`}>
       <div className={styles.offCanvasContent}>
@@ -54,4 +54,4 @@ const OffCanvas = ({ show, onClose }) => {
   );
 };
 
-export default OffCanvas;
+export default MenuBar;
