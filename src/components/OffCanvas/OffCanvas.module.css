@@ -1,0 +1,87 @@
+.offCanvasWrapper {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    height: 100vh;
+    width: 25%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 53;
+}
+
+.offCanvasWrapper.show {
+    transform: translateX(0);
+}
+
+.offCanvasContent {
+    height: 100%;
+    width: 100%;
+    max-width: 24rem;
+    background: white;
+    padding: 1.25rem;
+    overflow-y: auto;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #41434c;
+    margin-bottom: 1rem;
+}
+
+.offCanvasHeader {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.offCanvasNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: #2f2f2f;
+    font-weight: medium;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.navItem:hover {
+    background-color: #f7f7f7;
+}
+
+.navItem:last-child {
+    border-bottom: none;
+}
+
+.offCanvasFooter {
+    padding-top: 1rem;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    color: #959fba;
+}
+
+.footerText img {
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+@media screen and (max-width:760px) {
+    .offCanvasWrapper {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .offCanvasWrapper {
+        width: 100%;
+    }
+}
