@@ -1,0 +1,36 @@
+.dataContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Loading container styles */
+.loadingContainer {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader styles (ensure you have a loader class defined in your CSS) */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.errorMessage {
+  color: red;
+}

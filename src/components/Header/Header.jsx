@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import { MenuBar } from "..";
+import { useLanguage } from '../../app/context/languageContext'; // Adjust the path as needed
 
 const Header = () => {
   const [menuBarVisible, setMenuBarVisible] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { selectedLanguage, setSelectedLanguage } = useLanguage(); // Use language context
 
   const toggleMenuBar = () => setMenuBarVisible(!menuBarVisible);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
+  // Handler to change the language
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    setDropdownOpen(false); // Close dropdown after selection
+  };
 
   return (
     <header className={styles.header}>
@@ -67,22 +75,22 @@ const Header = () => {
                   </g>
                 </svg>
               </div>
-              <div className={styles.dropdownText}>Hindi</div>
+              <div className={styles.dropdownText}>{selectedLanguage}</div> {/* Display selected language */}
             </button>
             {dropdownOpen && (
               <div className={styles.dropdownMenu}>
                 <ul>
                   <li>
-                    <a href="#">English</a>
+                    <button onClick={() => handleLanguageChange('english')} className={styles.dropdownItem}>English</button>
                   </li>
                   <li>
-                    <a href="#">Spanish</a>
+                    <button onClick={() => handleLanguageChange('hindi')} className={styles.dropdownItem}>Hindi</button>
                   </li>
                   <li>
-                    <a href="#">French</a>
+                    <button onClick={() => handleLanguageChange('marathi')} className={styles.dropdownItem}>Marathi</button>
                   </li>
                   <li>
-                    <a href="#">German</a>
+                    <button onClick={() => handleLanguageChange('bengali')} className={styles.dropdownItem}>Bengali</button>
                   </li>
                 </ul>
               </div>
