@@ -1,10 +1,9 @@
-# KukuFm Landing Page Project
+# KukuFm Landing Page
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 Deployed Link: https://kukufm-assignment.vercel.app/
 
-## Getting Started
-Deployed Link: https://kukufm-assignment.vercel.app/
+Deployed Link: https://kuku-fm-landingpage.vercel.app/
 
 ## Setting Up the Project
 
