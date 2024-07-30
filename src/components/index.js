@@ -2,7 +2,7 @@ import Card from "./Card/Card";
 import Carousel from "./Carousel/Carousel";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import Main from "./Main/main";
+import Main from "./Main/Main";
 import LoadMore from "./LoadMore/LoadMore";
 import OffCanvas from "./OffCanvas/OffCanvas";
 
