@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./OffCanvas.module.css";
+import styles from "./MenuBar.module.css";
 
 const OffCanvas = ({ show, onClose }) => {
   return (

@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
-import { OffCanvas } from "..";
+import { MenuBar } from "..";
 
 const Header = () => {
-  const [offCanvasOpen, setoffCanvasOpen] = useState(false);
+  const [menuBarVisible, setMenuBarVisible] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleOffCanvas = () => setoffCanvasOpen(!offCanvasOpen);
+  const toggleMenuBar = () => setMenuBarVisible(!menuBarVisible);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <button className={styles.hamburger} onClick={toggleOffCanvas}>
+          <button className={styles.hamburger} onClick={toggleMenuBar}>
             &#9776;
           </button>
           <svg
@@ -45,7 +45,7 @@ const Header = () => {
           <div className={styles.dropdown}>
             <button
               className={styles.dropdownButton}
-              onClick={() => setDropdownOpen(!dropdownOpen)}
+              onClick={toggleDropdown}
               aria-haspopup="true"
               aria-expanded={dropdownOpen}
             >
@@ -101,7 +101,7 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <OffCanvas show={offCanvasOpen} onClose={toggleOffCanvas} />
+      <MenuBar show={menuBarVisible} onClose={toggleMenuBar} />
     </header>
   );
 };

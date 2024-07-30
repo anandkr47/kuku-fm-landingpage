@@ -4,6 +4,6 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Main from "./Main/Main";
 import LoadMore from "./LoadMore/LoadMore";
-import OffCanvas from "./OffCanvas/OffCanvas";
+import MenuBar from "./MenuBar/MenuBar";
 
-export { Card, Carousel, Header, Footer, Main,LoadMore, OffCanvas };
+export { Card, Carousel, Header, Footer, Main,LoadMore, MenuBar };
