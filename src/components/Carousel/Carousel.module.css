@@ -6,7 +6,7 @@
     height: 45vh;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+     gap: 20px;
 }
 
 .slide {
