@@ -7,8 +7,8 @@ import { LanguageProvider } from './context/languageContext'; // Adjust the path
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "KukuFm",
-  description: "KukuFm App",
+  title: "Kuku Fm - Made in India |",
+  description: "Audiobooks, Stories in Hindi & Marathi",
 };
 
 export default function RootLayout({ children }) {
