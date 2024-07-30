@@ -10,11 +10,11 @@ Deployed Link: https://kukufm-assignment.vercel.app/
 
 ### Clone the Project
 ```bash
-git clone git@github.com:vinayak700/Kukufm-Assignment.git
+git clone https://github.com/anandkr47/kuku-fm-landingpage.git
 ```
 ### Navigate to Project directory
 ```bash
-cd ./Kukufm-Assignment
+cd ./Kuku-fm-landingPage
 ```
 
 ### Run the Development Server
